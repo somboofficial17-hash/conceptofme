@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: serif;
+}
+header{
+    background-color: rgb(6, 83, 102);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    border-bottom: 1px solid black;
+    box-shadow: 0px 40px 40px rgb(0, 0, 0);
+    padding: 15px ;
+}
+
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.header-top .u-list .list{
+    display: inline;
+    flex-direction: row;
+    margin-left: 20px;
+    font-size: 20px;
+    list-style: none;
+}
+.header-top .u-list .list .text-list{
+    text-decoration:none ;
+    color: black;
+}
+.header-top .bi-list{
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+.bg-vd{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    align-items: center;
+    z-index: -5;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.section-home .home-me{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    animation: float 3s ease-in-out infinite;
+}
+@keyframes float{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.section-home .home-me .b-home{
+    padding: 10px 35px 10px;
+    background-color: rgb(216, 220, 223,0.4);
+    border-radius: 20px;
+
+}
+.section-home .home-me .b-home .bi-facebook{
+    font-size: 50px;
+    color: blue;
+    
+}
+.section-home .home-me .b-contact{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.section-home .home-me .b-contact .link-home1{
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.section-home .home-me .b-contact .link-home2{
+    color: blue;
+    text-decoration: none;
+    margin-top: 10px;
+    background-color: rgb(216, 220, 223,0.4);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.section-home .text-home{
+    text-align: center;
+    color: white;
+    padding: 0px 50px 0px ;
+}
+.section-home .text-home .title-home{
+  font-size: 45px;
+  padding: 20px ;
+  margin-top: 20px;
+  text-shadow: 1px 0px 1px black;
+}
+.section-home .text-home .paragrap-home{
+   font-size: 20px;
+   text-shadow: 1px 0px 1px black;
+   margin-top: 20px;
+   color: rgb(179, 182, 184);
+}
+.section-home .text-link-f {
+    color: white;
+    text-align: center;
+}.section-home .text-link-f  .text-linkh4{
+    margin: 10px;
+}
+.section-home .text-link-f  .text-linkh4 .text-linkt{
+    cursor: pointer;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+}
+.text-our{
+    font-weight: 700;
+    font-size:23px;
+    color: white;
+    text-align: center;
+    margin-top: 60px;
+}
+.icon-our{
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    margin-top: 25px;
+}
+.icon-our .bi-facebook{
+    padding: 10px;
+    color: blue;
+}
+.icon-our .bi-telegram{
+    padding: 10px;
+    color: rgb(22, 166, 255);
+}
+.icon-our .bi-google{
+    padding: 10px;
+    color: rgb(255, 57, 57);
+}
+.icon-our .bi-youtube{
+    padding: 10px;
+    color: red;
+}
+.icon-our .bi-github{
+    padding: 10px;
+    color: white;
+}
+
+.contain-our {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.contain-our .table .cell-box{
+    width: 550px;
+    height: 100px;
+    background-color: beige;
+    border-radius: 8px;
+    margin-top: 10px;
+    
+}
+.contain-our .table .text-cell{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin:20px;
+}
+
+.contain-n {
+    color: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px;
+}
+.contain-n .container-buttom .text-buttom{
+    background-color: rgba(236, 242, 247,0.3);
+    border-radius: 20px;
+    padding: 10px;
+}
+.contain-n .container-buttom  .tile-buttom{
+    margin-top: 50px;
+    font-size: 50px;
+    color: white;
+    text-shadow: 0px 6px 10px black;
+}
+.contain-n .container-buttom  .paragrap-buttom{
+    line-height: 1.6;
+    margin-top: 10px;
+    font-size: 20px;
+    color: white;
+}
+.contain-n .container-buttom  .icon-buttom{
+    font-size: 30px;
+    color: white;
+    
+}
+.contain-n .container-buttom  .icon-buttom .bi-youtube{
+    padding: 10px;
+    text-shadow: 0px 0px 2px rgb(226, 224, 216);
+    color: red;
+}
+.contain-n .container-buttom  .icon-buttom .bi-facebook{
+    padding: 10px;
+    color: blue;
+    text-shadow: 0px 0px 2px rgb(226, 224, 216);
+}
+.contain-n .container-buttom  .icon-buttom .bi-tiktok{
+    padding: 10px;
+    text-shadow: 0px 0px 2px rgb(226, 224, 216);
+}
+.contain-n .cell-boxj {
+    display: flex;
+    gap: 20px;
+}
+.contain-n .cell-boxj .cell-boxg .cell-boxn{
+    width: 200px;
+    height: 70px;
+    background-color: aquamarine;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+footer{
+    background-color: rgba(49, 49, 49,0.95);
+    align-items: center;
+    line-height: 1.6;
+}
+.footer-buttom{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.footer-buttom .mail-footer{
+    text-align: center;
+}
+
+.footer-buttom .mail-footer .email-box .bi-envelope{
+    color: rgb(255, 81, 0);
+}
+.footer-buttom .mail-footer .email-box span{
+    font-size: 20px;
+}
+.list-footer{
+    font-size: 20px;
+    
+}
+.icon-footer{
+    text-align: center;
+}
+.icon-footer .social-footer{
+    font-size: 20px;
+}
+.icon-footer h3{
+    font-size: 20px;
+}
+.icon-footer .social-footer .bi-youtube{
+    color: red;
+}
+.icon-footer .social-footer .bi-facebook{
+    color: blue;
+}
+
+@media (max-width: 768px){
+    .header-top .u-list{
+    display: none;
+    }
+    .contain-our{
+        display: inline;
+        flex-direction: row;
+    }
+    .contain-n{
+        display: inline;
+        flex-direction: row;
+        align-items: center;
+    }
+    .contain-n .container-buttom{
+        width: 90%;
+        margin: auto;
+    }
+    .contain-n .cell-boxj{
+        width: 90%;
+        margin: auto;
+    }
+    .section-home .text-home .paragrap-home{
+        margin-top: 0px;
+    }
+    .section-home .text-home .title-home{
+        font-size: 40px;
+    }
+    .footer-buttom{
+        display: inline;
+        flex-direction: row;
+        text-align: center;
+    }
+    .footer-buttom .list-footer{
+        margin-top: 10px;
+    }
+    .footer-buttom .icon-footer{
+        margin-top: 10px;
+    }
+    .header-top .bi-list{
+        display: block;
+    }
+}
+@media (max-width: 425px){
+    .icon-our{
+        font-size: 35px;
+    }
+    .text-our{
+        font-size: 22px;
+        margin-top: 15px;
+    }
+    .section-home .text-home .paragrap-home{
+        margin-top: 5px;
+    }
+}
